@@ -1,5 +1,8 @@
 ![Farming Simulator 25](https://img.shields.io/badge/Farming%20Simulator-25-3ba55d) ![Version](https://img.shields.io/badge/Version-1.0.0.0-blue) ![Multiplayer](https://img.shields.io/badge/Multiplayer-supported-brightgreen) ![Languages](https://img.shields.io/badge/Languages-DE%20%7C%20EN%20%7C%20FR-orange) ![Type](https://img.shields.io/badge/Type-Script%20Mod-lightgrey)
 
+<img width="256" height="256" alt="icon" src="https://github.com/user-attachments/assets/c6a8af68-0edb-4bc1-bd8b-89993e98ba37" />
+
+
 # FS25_OperatingCosts
 Realistic Operating Costs adds regular monthly operating costs to Farming Simulator 25. The mod takes vehicles, implements, buildings, silos and stored goods into account, creating a more realistic long-term cost structure for your farm.
 
