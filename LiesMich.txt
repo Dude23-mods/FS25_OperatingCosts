@@ -1,0 +1,115 @@
+FS25_OperatingCosts / Realistische Betriebskosten
+Version: 1.0.0.0
+Autor: Dude23
+
+Beschreibung
+------------
+Realistische Betriebskosten ergänzt monatliche Betriebskosten für Fahrzeuge, Geräte, Gebäude und eingelagerte Waren. Die Kosten werden automatisch beim Perioden-/Monatswechsel berechnet und als kurze Ingame-Meldung angezeigt. Beim Speichern des Spielstands schreibt die Mod eine operatingCostsHistory.xml in den Savegame-Ordner. Über ein einblendbares Fenster können die gespeicherten Kosten nach Kategorie und Zeitraum ausgewertet werden. Zusätzlich zeigt die Mod im Fahrzeugshop und im Baumenü Vorschauwerte für erwartete monatliche Kosten an.
+
+Umfang
+------
+Die Mod ergänzt keine Grunderwerbsteuer und keine Grundsteuer. Landbezogene Steuern gehören nicht zum Funktionsumfang, damit diese Mod klar auf Betriebskosten, Versicherungen und Unterhalt ausgerichtet bleibt.
+
+Kostenarten
+-----------
+
+1. Fahrzeug- und Geräteversicherung
+- Selbstfahrende Fahrzeuge zahlen je nach Wirtschaftsschwierigkeit einen monatlichen Satz auf den Neu- beziehungsweise Kaufwert.
+- Anhänger und Geräte zahlen jeweils einen reduzierten Satz.
+- Die Fahrzeug-/Geräteversicherung wird in der Finanzübersicht unter Betriebskosten Fahrzeuge / vehicleRunningCost gebucht.
+- Leasingfahrzeuge werden nicht zusätzlich berechnet.
+- Verbrauchs- und Lagerobjekte, die technisch über das Vehicle-System laufen, zum Beispiel Paletten, BigBags und Ballen, werden nicht als versicherbare Fahrzeuge oder Geräte behandelt.
+
+2. Gebäudeunterhalt / Unterhalts-Differenz
+- Für eigene Gebäude und Placeables wird ein Ziel-Unterhalt aus dem Baupreis berechnet.
+- Bereits vorhandener Unterhalt aus dem Grundspiel oder anderen Mods wird berücksichtigt.
+- Nur die Differenz wird zusätzlich abgezogen, wenn der Zielwert höher ist als der vorhandene Unterhalt.
+- Ist der vorhandene Unterhalt bereits höher, wird nichts zusätzlich berechnet.
+- Diese Kosten werden in der Finanzübersicht unter Betriebskosten Gebäude / propertyMaintenance gebucht.
+- Vorplatzierte Hofgebäude ohne verwertbare Preisdaten erhalten vorsichtige interne Ersatzwerte.
+
+3. Lagergutversicherung
+- Eingelagerte Waren werden auf Grundlage ihres geschätzten Warenwerts versichert.
+- Die Lagergutversicherung wird in der Finanzübersicht unter Sonstiges / other gebucht, weil das Grundspiel hierfür keine passendere Standardkategorie bietet.
+- Die Lagererkennung arbeitet defensiv über bekannte Storage-Strukturen und direkte Silo-Funktionen. Sehr spezielle Lager aus Karten oder Gebäudemods können eventuell nicht vollständig erkannt werden.
+
+Standardwerte
+-------------
+Die Standardwerte gelten pro Monat und können je Spielstand über operatingCostsConfig.xml angepasst werden.
+
+Fahrzeugversicherung:
+- Leicht: 0,10 %
+- Mittel: 0,20 %
+- Schwer: 0,30 %
+
+Geräte-/Anhänger-Versicherung:
+- Leicht: 0,05 %
+- Mittel: 0,10 %
+- Schwer: 0,15 %
+
+Gebäudeunterhalt:
+- Leicht: 0,10 %
+- Mittel: 0,20 %
+- Schwer: 0,30 %
+
+Lagergutversicherung:
+- Leicht: 0,025 %
+- Mittel: 0,050 %
+- Schwer: 0,075 %
+
+Betriebskosten-Übersicht
+------------------------
+- Das Fenster wird standardmäßig mit STRG + ALT + B geöffnet und geschlossen.
+- Die Tastenbelegung kann in den Steuerungseinstellungen über den Eintrag „Übersichtsmenü“ geändert werden.
+- Das Fenster ist kein ESC-Menü-Reiter, sondern ein eigenes einblendbares Ingame-Fenster.
+- Beim Öffnen wird der Mauszeiger eingeblendet. Das Fenster kann auch mit ESC geschlossen werden.
+- Die obere Menüleiste enthält Reiter für Gesamt, Fahrzeug-/Geräteversicherung, Lagergutversicherung und Unterhalt.
+- Der Zeitraumfilter kann zwischen Monat, Jahr und Alle Jahre wechseln.
+- Die Monatsansicht zeigt Einzelposten aus operatingCostsHistory.xml beziehungsweise aus der laufenden, noch nicht gespeicherten Auswertung.
+- Die Jahresansicht fasst Monatswerte zusammen.
+- Die Ansicht Alle Jahre fasst gespeicherte Jahre zusammen, sodass zum Beispiel Jahr 1 und Jahr 2 verglichen werden können.
+- Lange Einzelpostenlisten werden mit Scrollbalken angezeigt.
+- Unten wird eine Summenzeile „Gesamt“ angezeigt.
+- Nach Möglichkeit wird der aktuelle Farmname angezeigt.
+
+Vorschau im Fahrzeugshop und Baumenü
+------------------------------------
+- Im Fahrzeugshop wird die erwartete monatliche Fahrzeug-/Geräteversicherung angezeigt.
+- Im Baumenü wird der erwartete monatliche Gebäudeunterhalt angezeigt.
+- Die Vorschau zeigt den Bemessungswert, die erkannte Kategorie und die Wirtschaftsschwierigkeit.
+- Im Baumenü werden vorhandener Unterhalt und zusätzlicher Unterhalt getrennt angezeigt.
+- Als zusätzlicher Unterhalt wird nur die Differenz zwischen Ziel-Unterhalt und bereits vorhandenem Unterhalt angezeigt.
+
+Finanzübersicht
+---------------
+Die Mod registriert keine eigenen MoneyTypes, sondern nutzt vorhandene Finanzkategorien des Grundspiels:
+- Gebäude/Silos/Unterhalt: propertyMaintenance
+- Fahrzeuge/Geräte/Anhänger: vehicleRunningCost
+- Lagergutversicherung: other
+
+Zusätzliche Detaildatei
+-----------------------
+Beim Speichern des Spielstands erstellt oder aktualisiert die Mod operatingCostsHistory.xml im Savegame-Ordner. Die Datei enthält Einzelposten mit Objektname, Betrag, Bemessungswert, Satz und Finanzkategorie. Sie wird beim Laden des Spielstands und beim Öffnen der Übersicht erneut eingelesen, damit eine echte Historie über mehrere gespeicherte Monate und Jahre angezeigt werden kann. Mehrfache Datensätze für dieselbe Farm, dasselbe Jahr und denselben Monat werden vermieden beziehungsweise bereinigt.
+
+Savegame-Konfiguration
+----------------------
+Beim Speichern erstellt die Mod operatingCostsConfig.xml im Savegame-Ordner, falls die Datei noch nicht vorhanden ist. Dort können die monatlichen Prozentsätze angepasst werden. Die Werte sind Prozentwerte, keine Dezimalfaktoren. Beispiel: 0.30 bedeutet 0,30 % pro Monat.
+
+Folgende Werte können je Wirtschaftsschwierigkeit angepasst werden:
+- motorVehicleInsurancePercent: Versicherung für selbstfahrende Fahrzeuge
+- implementInsurancePercent: Versicherung für Geräte und Anhänger
+- placeableUpkeepPercent: Ziel-Unterhalt für Gebäude und Placeables
+- storedGoodsInsurancePercent: Lagergutversicherung
+
+Nach einer Änderung der Datei sollte der Spielstand neu geladen werden, damit die neuen Werte sicher übernommen werden.
+
+Mehrspieler
+-----------
+Die Berechnung läuft nur auf dem Server beziehungsweise Host. Dadurch sollen doppelte clientseitige Buchungen verhindert werden. Im Mehrspieler wird die Benachrichtigung an die betroffene Farm gesendet. Die Übersicht liest die lokal verfügbare operatingCostsHistory.xml des Spielstands.
+
+Bekannte Einschränkungen
+------------------------
+- Das Fenster ist ein gezeichnetes Ingame-Fenster und kein vollständig integrierter ESC-Menü-Bildschirm.
+- Statische Kartengebäude ohne ShopItem oder gespeicherte Preisdaten können nicht vollständig realistisch bewertet werden.
+- Sehr spezielle Lager aus Karten oder Gebäudemods können eventuell nicht vollständig erkannt werden.
+- Die Standardwerte sind als spielerische Grundlage gedacht und können je Spielstand angepasst werden.

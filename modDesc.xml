@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="108">
+    <author>Dude23</author>
+    <version>1.0.0.0</version>
+    <title>
+        <de>Realistische Betriebskosten</de>
+        <en>Realistic Operating Costs</en>
+        <fr>Coûts D’Exploitation Réalistes</fr>
+    </title>
+    <description>
+        <de>Realistische Betriebskosten erweitert den Landwirtschafts-Simulator um regelmäßige monatliche Kosten für den laufenden Betrieb deines Hofes. Fahrzeuge und Geräte erhalten eine Fahrzeug-/Geräteversicherung, Gebäude und Silos werden mit zusätzlichem Unterhalt bewertet und eingelagerte Waren können über die Lagergutversicherung berücksichtigt werden. Die Kosten richten sich nach Wirtschaftsschwierigkeit und Bemessungswerten und können je Spielstand über eine eigene operatingCostsConfig.xml angepasst werden. Ein einblendbares Übersichtsfenster zeigt die gespeicherte History nach Monat, Jahr und Kostenart; zusätzlich erscheinen Vorschauwerte im Fahrzeugshop und im Baumenü.</de>
+        <en>Realistic Operating Costs adds regular monthly farm running costs to Farming Simulator. Vehicles and implements receive vehicle/equipment insurance, buildings and silos can receive additional upkeep, and stored goods can be included through stored goods insurance. The costs depend on economy difficulty and assessment values and can be adjusted per savegame through a dedicated operatingCostsConfig.xml. An in-game overview window shows the saved history by month, year and cost type; preview values are also shown in the vehicle shop and construction menu.</en>
+        <fr>Coûts D’Exploitation Réalistes ajoute des coûts mensuels réguliers pour l’exploitation de votre ferme. Les véhicules et outils reçoivent une assurance, les bâtiments et silos peuvent recevoir un entretien supplémentaire, et les marchandises stockées peuvent être prises en compte par une assurance de stock. Les coûts dépendent de la difficulté économique et des valeurs de base, et peuvent être ajustés par sauvegarde dans operatingCostsConfig.xml. Une fenêtre d’aperçu en jeu affiche l’historique par mois, année et type de coût; des valeurs prévisionnelles sont aussi affichées dans la boutique et le menu de construction.</fr>
+    </description>
+    <iconFilename>icon.dds</iconFilename>
+    <storeIconFilename>storeIcon.dds</storeIconFilename>
+    <multiplayer supported="true" />
+
+    <l10n filenamePrefix="i18n/l10n" />
+
+    <actions>
+        <action name="HP_OC_TOGGLE_WINDOW" category="ONFOOT" axisType="HALF" ignoreComboMask="false" />
+    </actions>
+
+    <inputBinding>
+        <actionBinding action="HP_OC_TOGGLE_WINDOW">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_lalt KEY_b" />
+        </actionBinding>
+    </inputBinding>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/HP_OperatingCosts.lua" />
+    </extraSourceFiles>
+</modDesc>

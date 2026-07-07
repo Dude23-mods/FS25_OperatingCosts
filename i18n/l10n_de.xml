@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="input_HP_OC_TOGGLE_WINDOW">
+            <de>Übersichtsmenü</de>
+            <en>Overview Menu</en>
+            <fr>Menu d’aperçu</fr>
+        </text>
+        <text name="HP_OC_TOGGLE_WINDOW">
+            <de>Übersichtsmenü</de>
+            <en>Overview Menu</en>
+            <fr>Menu d’aperçu</fr>
+        </text>
+        <text name="action_HP_OC_TOGGLE_WINDOW">
+            <de>Übersichtsmenü</de>
+            <en>Overview Menu</en>
+            <fr>Menu d’aperçu</fr>
+        </text>
+        <text name="hpOc_title">
+            <de>Betriebskosten-Auswertung</de>
+            <en>Operating Costs Overview</en>
+            <fr>Aperçu des coûts d’exploitation</fr>
+        </text>
+        <text name="hpOc_close">
+            <de>Schließen</de>
+            <en>Close</en>
+            <fr>Fermer</fr>
+        </text>
+        <text name="hpOc_tabTotal">
+            <de>Gesamt</de>
+            <en>Total</en>
+            <fr>Total</fr>
+        </text>
+        <text name="hpOc_tabVehicleInsurance">
+            <de>Fahrzeug-/Geräteversicherung</de>
+            <en>Vehicle/equipment insurance</en>
+            <fr>Assurance véhicules/outils</fr>
+        </text>
+        <text name="hpOc_tabStoredGoodsInsurance">
+            <de>Lagergutversicherung</de>
+            <en>Stored goods insurance</en>
+            <fr>Assurance des stocks</fr>
+        </text>
+        <text name="hpOc_tabUpkeep">
+            <de>Unterhalt</de>
+            <en>Upkeep</en>
+            <fr>Entretien</fr>
+        </text>
+        <text name="hpOc_periodMonth">
+            <de>Monat</de>
+            <en>Month</en>
+            <fr>Mois</fr>
+        </text>
+        <text name="hpOc_periodYear">
+            <de>Jahr</de>
+            <en>Year</en>
+            <fr>Année</fr>
+        </text>
+        <text name="hpOc_periodAll">
+            <de>Alle Jahre</de>
+            <en>All years</en>
+            <fr>Toutes les années</fr>
+        </text>
+        <text name="hpOc_year">
+            <de>Jahr</de>
+            <en>Year</en>
+            <fr>Année</fr>
+        </text>
+        <text name="hpOc_month">
+            <de>Monat</de>
+            <en>Month</en>
+            <fr>Mois</fr>
+        </text>
+        <text name="hpOc_allYears">
+            <de>Alle gespeicherten Jahre</de>
+            <en>All saved years</en>
+            <fr>Toutes les années enregistrées</fr>
+        </text>
+        <text name="hpOc_farm">
+            <de>Farm</de>
+            <en>Farm</en>
+            <fr>Ferme</fr>
+        </text>
+        <text name="hpOc_total">
+            <de>Gesamt</de>
+            <en>Total</en>
+            <fr>Total</fr>
+        </text>
+        <text name="hpOc_noHistory">
+            <de>Für diese Auswahl liegen noch keine gespeicherten Betriebskosten vor.</de>
+            <en>There are no saved operating costs for this selection yet.</en>
+            <fr>Aucun coût d’exploitation enregistré pour cette sélection.</fr>
+        </text>
+        <text name="hpOc_noHistoryHint">
+            <de>Nach dem nächsten Monatswechsel wird operatingCostsHistory.xml automatisch ergänzt.</de>
+            <en>After the next month change, operatingCostsHistory.xml will be updated automatically.</en>
+            <fr>Après le prochain changement de mois, operatingCostsHistory.xml sera mis à jour automatiquement.</fr>
+        </text>
+        <text name="hpOc_object">
+            <de>Objekt</de>
+            <en>Object</en>
+            <fr>Objet</fr>
+        </text>
+        <text name="hpOc_type">
+            <de>Art</de>
+            <en>Type</en>
+            <fr>Type</fr>
+        </text>
+        <text name="hpOc_amount">
+            <de>Betrag</de>
+            <en>Amount</en>
+            <fr>Montant</fr>
+        </text>
+        <text name="hpOc_selectedCategory">
+            <de>Ausgewählte Kategorie</de>
+            <en>Selected category</en>
+            <fr>Catégorie sélectionnée</fr>
+        </text>
+        <text name="hpOc_moreRows">
+            <de>Einträge %s-%s von %s</de>
+            <en>Entries %s-%s of %s</en>
+            <fr>Entrées %s-%s sur %s</fr>
+        </text>
+        <text name="hpOc_footer">
+            <de>Klicke auf Reiter, Zeitraum und Pfeile. ESC schließt das Fenster. Die Daten stammen aus operatingCostsHistory.xml.</de>
+            <en>Click tabs, period and arrows. ESC closes the window. The data is read from operatingCostsHistory.xml.</en>
+            <fr>Cliquez sur les onglets, la période et les flèches. Échap ferme la fenêtre. Les données viennent de operatingCostsHistory.xml.</fr>
+        </text>
+        <text name="hpOc_month01">
+            <de>Januar</de>
+            <en>January</en>
+            <fr>Janvier</fr>
+        </text>
+        <text name="hpOc_month02">
+            <de>Februar</de>
+            <en>February</en>
+            <fr>Février</fr>
+        </text>
+        <text name="hpOc_month03">
+            <de>März</de>
+            <en>March</en>
+            <fr>Mars</fr>
+        </text>
+        <text name="hpOc_month04">
+            <de>April</de>
+            <en>April</en>
+            <fr>Avril</fr>
+        </text>
+        <text name="hpOc_month05">
+            <de>Mai</de>
+            <en>May</en>
+            <fr>Mai</fr>
+        </text>
+        <text name="hpOc_month06">
+            <de>Juni</de>
+            <en>June</en>
+            <fr>Juin</fr>
+        </text>
+        <text name="hpOc_month07">
+            <de>Juli</de>
+            <en>July</en>
+            <fr>Juillet</fr>
+        </text>
+        <text name="hpOc_month08">
+            <de>August</de>
+            <en>August</en>
+            <fr>Août</fr>
+        </text>
+        <text name="hpOc_month09">
+            <de>September</de>
+            <en>September</en>
+            <fr>Septembre</fr>
+        </text>
+        <text name="hpOc_month10">
+            <de>Oktober</de>
+            <en>October</en>
+            <fr>Octobre</fr>
+        </text>
+        <text name="hpOc_month11">
+            <de>November</de>
+            <en>November</en>
+            <fr>Novembre</fr>
+        </text>
+        <text name="hpOc_month12">
+            <de>Dezember</de>
+            <en>December</en>
+            <fr>Décembre</fr>
+        </text>
+        <text name="hpOc_shopPreviewTitle">
+            <de>Erwartete Betriebskosten</de>
+            <en>Expected operating costs</en>
+            <fr>Coûts prévus</fr>
+        </text>
+        <text name="hpOc_constructionPreviewTitle">
+            <de>Erwartete Betriebskosten</de>
+            <en>Expected operating costs</en>
+            <fr>Coûts prévus</fr>
+        </text>
+        <text name="hpOc_shopPreviewVehicle">
+            <de>Fahrzeug</de>
+            <en>Vehicle</en>
+            <fr>Véhicule</fr>
+        </text>
+        <text name="hpOc_shopPreviewImplement">
+            <de>Gerät/Anhänger</de>
+            <en>Implement/Trailer</en>
+            <fr>Outil/remorque</fr>
+        </text>
+        <text name="hpOc_shopPreviewInsuredValue">
+            <de>Versicherungswert</de>
+            <en>Insured value</en>
+            <fr>Valeur assurée</fr>
+        </text>
+        <text name="hpOc_shopPreviewDifficulty">
+            <de>Wirtschaft</de>
+            <en>Economy</en>
+            <fr>Économie</fr>
+        </text>
+        <text name="hpOc_constructionPreviewDifficulty">
+            <de>Wirtschaft</de>
+            <en>Economy</en>
+            <fr>Économie</fr>
+        </text>
+        <text name="hpOc_shopPreviewMonthlyInsurance">
+            <de>Versicherung pro Monat</de>
+            <en>Insurance per month</en>
+            <fr>Assurance par mois</fr>
+        </text>
+        <text name="hpOc_shopPreviewRate">
+            <de>Satz</de>
+            <en>Rate</en>
+            <fr>Taux</fr>
+        </text>
+        <text name="hpOc_constructionPreviewRate">
+            <de>Satz</de>
+            <en>Rate</en>
+            <fr>Taux</fr>
+        </text>
+        <text name="hpOc_constructionPreviewMonthlyUpkeep">
+            <de>Zusätzlicher Unterhalt</de>
+            <en>Additional upkeep</en>
+            <fr>Entretien supplémentaire</fr>
+        </text>
+        <text name="hpOc_constructionPreviewBaseValue">
+            <de>Bemessungswert</de>
+            <en>Assessment value</en>
+            <fr>Valeur de base</fr>
+        </text>
+        <text name="hpOc_constructionPreviewCategory">
+            <de>Kategorie</de>
+            <en>Category</en>
+            <fr>Catégorie</fr>
+        </text>
+        <text name="hpOc_constructionPreviewNativeUpkeep">
+            <de>Vorhandener Unterhalt</de>
+            <en>Existing upkeep</en>
+            <fr>Entretien existant</fr>
+        </text>
+        <text name="hpOc_constructionPreviewCategoryPlaceable">
+            <de>Gebäude/Placeable</de>
+            <en>Building/placeable</en>
+            <fr>Bâtiment/objet</fr>
+        </text>
+        <text name="hpOc_shopPreviewLeaseNote">
+            <de>Leasing/Miete wird aktuell nicht abgerechnet.</de>
+            <en>Leasing/renting is currently not charged.</en>
+            <fr>Le leasing/la location n’est actuellement pas facturé.</fr>
+        </text>
+        <text name="hpOc_difficultyEasy">
+            <de>Einfach</de>
+            <en>Easy</en>
+            <fr>Facile</fr>
+        </text>
+        <text name="hpOc_difficultyNormal">
+            <de>Normal</de>
+            <en>Normal</en>
+            <fr>Normal</fr>
+        </text>
+        <text name="hpOc_difficultyHard">
+            <de>Schwer</de>
+            <en>Hard</en>
+            <fr>Difficile</fr>
+        </text>
+        <text name="notification_hpOperatingCostsMonthly">
+            <de>Betriebskosten abgerechnet: Fahrzeug-/Geräteversicherung %s, Lagergutversicherung %s, Unterhalt %s.</de>
+            <en>Operating costs charged: vehicle/equipment insurance %s, stored goods insurance %s, upkeep %s.</en>
+            <fr>Coûts d’exploitation facturés : assurance véhicules/outils %s, assurance des stocks %s, entretien %s.</fr>
+        </text>
+    </texts>
+    <elements>
+        <e k="input_HP_OC_TOGGLE_WINDOW" v="Übersichtsmenü" />
+        <e k="HP_OC_TOGGLE_WINDOW" v="Übersichtsmenü" />
+        <e k="action_HP_OC_TOGGLE_WINDOW" v="Übersichtsmenü" />
+    </elements>
+</l10n>
